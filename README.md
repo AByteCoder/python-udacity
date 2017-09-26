@@ -14,7 +14,8 @@ python turtle_sgasket.py
 # Mini Project-4 [Movie Trailer](mini_project4)
 ```
 cd mini_project4
-python fav_movies.py fav_movies.json fav_movies.html```
+python fav_movies.py fav_movies.json fav_movies.html
+```
 
 The first paramenter to the program is a [JSON](http://www.json.org/) [file](mini_project4/fav_movies.json) it contains data about the movies.
 
