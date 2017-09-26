@@ -1,0 +1,139 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: sans-serif;
+  background-color: #FAFAFA;
+}
+.header{
+  padding: 10px;
+  height: 50px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15);
+  background-color: #009688;
+}
+.header .header-title{
+  position: relative;
+  top : 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #FFF;
+  user-select: none;
+  -moz-user-select:none;
+}
+.movie-container{
+  margin: 0 20px 0 20px;
+  width: auto;
+  text-align: center;
+}
+.movie{
+  position: relative;
+  width: 270px;
+  height: 410px;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.15),0 -1px 0 0 rgba(0,0,0,0.15),1px 0 0 0 rgba(0,0,0,0.15),-1px 0 0 0 rgba(0,0,0,0.15);
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 3px;
+  user-select: none;
+  -moz-user-select:none;
+  overflow-y: hidden;
+}
+.movie .movie-image{
+  width: 270px;
+  height: 410px;
+}
+.movie .movie-review{
+  position: absolute;
+  left: 0;
+  right:0;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.15);
+  transition: 0.2s transform ease-in;
+  transform: translateY(-45px);
+}
+.movie:hover .movie-review{
+  transform: translateY(-100%);
+}
+
+.movie-rating{
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+
+.movie .movie-review-text{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #EEE;
+}
+.movie .review-logo{
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+.movie-storyline{
+  border-top: 1px solid #EEE;
+  margin-bottom: 10px;
+  color: #FFF;
+  max-height: calc(100% - 46px);
+  overflow-y: auto;
+  text-align: justify;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top:5px;
+}
+.movie-trailer{
+  position: fixed;
+  width: auto;
+  height: auto;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.dialog{
+  position: fixed;
+  background-color: rgba(0,0,0,0.8);
+  top:0;
+  right:0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+}
+@media screen and (max-width:480px) {
+  .header{
+    height: 30px;
+  }
+  .header .header-title{
+    top:5px;
+    font-size: 1em;
+  }
+  .movie{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .movie .movie-image{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  .movie-trailer{
+    width: 100%;
+    height: auto;
+  }
+
+}
+@media screen and (min-width:640px) {
+  .movie-trailer{
+    width: 640px;
+    height: 360px;
+  }
+}
