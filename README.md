@@ -7,7 +7,8 @@ This project was created to draw a 2d Sierpinski Gasket.
 ## How to run it?
 ```
 cd mini_project2
-python turtle_sgasket.py```
+python turtle_sgasket.py
+```
 ## Screenshot
 ![Sierpinski Gasket Screenshot](screenshots/screenshot_gasket.png)
 # Mini Project-4 [Movie Trailer](mini_project4)
