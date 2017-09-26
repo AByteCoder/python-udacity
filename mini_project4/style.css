@@ -23,7 +23,9 @@ body{
 .movie-container{
   margin: 0 20px 0 20px;
   width: auto;
-  text-align: center;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .movie{
   position: relative;
@@ -59,6 +61,7 @@ body{
   height: 40px;
   margin-top: 5px;
   margin-bottom: 1px;
+  text-align: center;
 }
 
 .movie .movie-review-text{
