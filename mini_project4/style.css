@@ -1,17 +1,17 @@
-body{
+body {
   margin: 0;
   padding: 0;
   font-size: 1em;
   font-family: sans-serif;
   background-color: #FAFAFA;
 }
-.header{
+.header {
   padding: 10px;
   height: 50px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15);
   background-color: #009688;
 }
-.header .header-title{
+.header .header-title {
   position: relative;
   top : 10px;
   font-weight: bold;
@@ -20,14 +20,14 @@ body{
   user-select: none;
   -moz-user-select:none;
 }
-.movie-container{
+.movie-container {
   margin: 0 20px 0 20px;
   width: auto;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
-.movie{
+.movie {
   position: relative;
   width: 270px;
   height: 410px;
@@ -40,11 +40,11 @@ body{
   -moz-user-select:none;
   overflow-y: hidden;
 }
-.movie .movie-image{
+.movie .movie-image {
   width: 270px;
   height: 410px;
 }
-.movie .movie-review{
+.movie .movie-review {
   position: absolute;
   left: 0;
   right:0;
@@ -53,18 +53,18 @@ body{
   transition: 0.2s transform ease-in;
   transform: translateY(-45px);
 }
-.movie:hover .movie-review{
+.movie:hover .movie-review {
   transform: translateY(-100%);
 }
 
-.movie-rating{
+.movie-rating {
   height: 40px;
   margin-top: 5px;
   margin-bottom: 1px;
   text-align: center;
 }
 
-.movie .movie-review-text{
+.movie .movie-review-text {
     display: inline-block;
     vertical-align: middle;
     font-size: 18px;
@@ -72,13 +72,13 @@ body{
     font-weight: bold;
     color: #EEE;
 }
-.movie .review-logo{
+.movie .review-logo {
   display: inline-block;
   vertical-align: middle;
   width: 30px;
   height: 30px;
 }
-.movie-storyline{
+.movie-storyline {
   border-top: 1px solid #EEE;
   margin-bottom: 10px;
   color: #FFF;
@@ -89,7 +89,7 @@ body{
   margin-right: 5px;
   padding-top:5px;
 }
-.movie-trailer{
+.movie-trailer {
   position: fixed;
   width: auto;
   height: auto;
@@ -97,7 +97,7 @@ body{
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.dialog{
+.dialog {
   position: fixed;
   background-color: rgba(0,0,0,0.8);
   top:0;
@@ -109,33 +109,33 @@ body{
   z-index: 2;
 }
 @media screen and (max-width:480px) {
-  .header{
+  .header {
     height: 30px;
   }
-  .header .header-title{
+  .header .header-title {
     top:5px;
     font-size: 1em;
   }
-  .movie{
+  .movie {
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
     height: auto;
   }
-  .movie .movie-image{
+  .movie .movie-image {
     max-width: 100%;
     width: auto;
     height: auto;
   }
-  .movie-trailer{
+  .movie-trailer {
     width: 100%;
     height: auto;
   }
 
 }
 @media screen and (min-width:640px) {
-  .movie-trailer{
+  .movie-trailer {
     width: 640px;
     height: 360px;
   }

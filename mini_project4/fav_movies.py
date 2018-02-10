@@ -12,7 +12,7 @@ def createMoviesHTML(movies):
     for movie in movies:
         color = colors[random.randint(0,len(colors))]
         movie_string = '''
-        <div class="movie" title="{name}" data-url="{trailer}">
+        <article class="movie" title="{name}" data-url="{trailer}">
           <img class="movie-image" src="{poster}" alt="{name} Image" />
           <div class="movie-review" style="background-color:{color};">
             <div class="movie-rating">
@@ -24,7 +24,7 @@ def createMoviesHTML(movies):
             {story}
             </div>
           </div>
-      </div>'''.format(name = movie['name'],trailer = movie['trailer'],poster = movie['poster'],imdb = movie['imdb'],story = movie['storyline'],color = color)
+      </article>'''.format(name = movie['name'],trailer = movie['trailer'],poster = movie['poster'],imdb = movie['imdb'],story = movie['storyline'],color = color)
         html_string = html_string + movie_string
     return html_string
 
@@ -42,15 +42,15 @@ def main():
       </script>
     </head>
     <body>
-      <div class="header">
+      <header class="header">
         <span class="header-title">My Favourite Movies</span>
-      </div>
+      </header>
       <div class="movie-container">'''
     footer_string = r'''
     </div>
-    <div class="dialog">
+    <section class="dialog">
       <iframe class="movie-trailer" frameborder="0"></iframe>
-    </div>
+    </section>
     </body>
     </html>'''
     arg_l = len(sys.argv)
